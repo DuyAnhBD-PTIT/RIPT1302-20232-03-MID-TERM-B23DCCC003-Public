@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <script src="bai1.js"></script>
+    <style>
+        html{
+            background-color: rgb(52, 58, 64);;
+        }
+        .container{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            margin: 0 auto;
+            background: #ecf0f1;
+            width: 350px;
+            border-radius: 5px;
+            box-shadow: 3px 3px 3px 3px #333;
+            padding: 15px;
+        }
+        input {
+            width: 220px;
+            margin-inline: 4px;
+        }
+        button {
+            margin-top: 4px;
+            margin-left: 5px;
+            text-align: center;
+            font-weight: bold;
+            border-style: inset;
+            cursor: pointer;
+            box-shadow: none;
+        }
+        button:hover{
+            background-color: #ddd;
+            box-shadow: 1px 1px 10px black;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="form-container">
+    <form action="">
+        <input type="number" name="A" id="A" placeholder="Enter your first number here">
+        <input type="number" name="B" id="B" placeholder="Enter your second number here">
+    </form>
+        <p style="font-weight: bold;" id="Result">Result:</p>
+        <button id="sum" onclick="sum()">Sum</button>
+        <button id="subtract" onclick="subtract()">Subtract</button>
+        <button id="multiply" onclick="multiply()">Multiply</button>
+        <button id="divide" onclick="divide()">Divide</button>
+        <button id="reset" onclick="reset()">Reset</button>
+        </div>
+    </div>
+</body>
+</html>

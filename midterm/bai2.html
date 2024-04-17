@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đồng hồ báo thức</title>
+    <style>
+html{
+    background-color: rgb(52, 58, 64);
+}
+.container {
+    text-align: center;
+    margin-top: 50px;
+}
+
+input{
+    width: 60px;    
+}
+button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+#clock{
+    font-size: 150px;
+    color: white;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="clockcontainer">
+        <h1 style="color:white;">Đồng hồ báo thức</h1>
+        <div id="clock">00:00</div>
+        <input type="number" id="minutes" placeholder="Phút">
+        <input type="number" id="seconds" placeholder="Giây">
+        <button onclick="startCountdown()">START</button>
+        <button onclick="resetCountdown()">RESET</button>
+
+        <audio id="alarmSound" src="alarm.mp3" loop></audio></div>
+    </div>
+<script src="bai2.js"></script>
+</body>
+</html>
